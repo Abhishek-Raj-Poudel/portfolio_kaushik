@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button {
+  @apply bg-primary text-white px-12 py-3 font-semibold rounded-full uppercase;
+}
