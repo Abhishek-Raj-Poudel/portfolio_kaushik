@@ -3,6 +3,7 @@ import React from "react";
 import Testimony from "./Testimony";
 // images and svgs
 import mainImage from "../image/mainImage.png";
+import Scorpio from "../image/SVGs/Scorpio.svg";
 import Sagiterrious from "../image/SVGs/Sagiterrious.svg";
 
 type Props = {};
@@ -35,6 +36,13 @@ export default function Hero({}: Props) {
         image={mainImage}
         style={" absolute z-[11] left-[430px] top-[430px]  "}
       />
+      {/* <img src={Sagiterrious} alt="" /> */}
+      <div className="absolute text-heading opacity-20 top-[204px] right-[158px]">
+        <Scorpio />
+      </div>
+      <div className="absolute text-heading opacity-20 top-[450px] left-[88px]">
+        <Sagiterrious />
+      </div>
     </div>
   );
 }
