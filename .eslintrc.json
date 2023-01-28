@@ -1,0 +1,11 @@
+{
+  "extends": ["next", "next/core-web-vitals", "eslint:recommended"],
+  "globals": {
+    // you dont have to import react in your script.
+    "React": "readonly"
+  },
+  "rules": {
+    //unused variable gets prefixed into a ^_ sign
+    "no-unused-vars": [1, { "args": "after-used", "argsIgnorePattern": "^_" }]
+  }
+}
