@@ -8,8 +8,10 @@ export default function Header({}: Props) {
   return (
     <div className="fixed top-0 w-full flex items-center justify-between glassmorphism py-4 px-90  z-20 ">
       {/* links */}
-      <Link href="/" className="bg-primary text-white p-2 rounded-full">
-        <FiFacebook className="w-6 h-6" />
+      <Link href="/" className="">
+        <button className="button_rounded">
+          <FiFacebook className="w-6 h-6" />
+        </button>
       </Link>
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">

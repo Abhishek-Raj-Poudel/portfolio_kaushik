@@ -12,9 +12,7 @@ export default function About({}: Props) {
       <div className="flex items-center">
         <Image src={mainImage} alt="" className="z-10" />
         <div className="flex  flex-col gap-4">
-          <h3 className="text-[40px] font-poppins font-bold">
-            A little bit about me
-          </h3>
+          <h3 className="">A little bit about me</h3>
           <p className=" text-xl">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed
             tempus ligula. Vestibulum diam justo, sodales quis elit in, finibus

@@ -6,6 +6,7 @@ import mainImage from "../image/mainImage.png";
 import Scorpio from "../image/SVGs/Scorpio.svg";
 import Sagiterrious from "../image/SVGs/Sagiterrious.svg";
 import Link from "next/link";
+import Nav from "./Nav";
 
 type Props = {};
 
@@ -18,18 +19,9 @@ export default function Hero({}: Props) {
       <p className="uppercase text-lg text-primary  tracking-[6px] mt-3 z-10">
         Astrologer, Vastubid and More.
       </p>
-      <h1 className="mt-1 z-10">Shreekesh Kaushik</h1>
+      <h1 className="mt-1 mb-5 z-10">Shreekesh Kaushik</h1>
       {/* navigation */}
-      <nav className="mt-5 flex gap-4 z-10">
-        <Link href="#about">
-          <button>About</button>
-        </Link>
-        <Link href="#services">
-          <button>Services</button>
-        </Link>
-
-        <button>Contacts</button>
-      </nav>
+      <Nav />
       <Testimony
         image={mainImage}
         style={" absolute left-[551px] top-[133px]"}
@@ -42,6 +34,7 @@ export default function Hero({}: Props) {
         image={mainImage}
         style={" absolute z-[11] left-[430px] top-[430px]  "}
       />
+
       {/* <img src={Sagiterrious} alt="" /> */}
       <div className="absolute text-heading opacity-20 top-[185px] right-[140px]">
         <Scorpio />

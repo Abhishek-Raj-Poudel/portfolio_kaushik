@@ -22,7 +22,7 @@ export default function Card({
     <div className="px-5 pt-7 pb-9 rounded-lg flex flex-col items-center justify-between  glassmorphism gap-4 border-t-2 border-primary">
       <div className="flex flex-col gap-2">
         <Image src={scroll} alt="logo" className="self-center mb-2" />
-        <h3 className="self-center">{title}</h3>
+        <h4 className="self-center">{title}</h4>
         <p className="max-w-xs text-text_color ">{discription}</p>
         {requirements && (
           <>

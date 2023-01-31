@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import About from "../components/About";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Services from "../components/Services";
@@ -28,6 +29,10 @@ const Home: NextPage = () => {
 
       <section id="services" className="snap-center">
         <Services />
+      </section>
+
+      <section id="contacts" className="snap-center">
+        <Contact />
       </section>
 
       <footer className="py-8 text-center">
