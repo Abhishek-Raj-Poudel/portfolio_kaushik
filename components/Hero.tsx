@@ -24,12 +24,15 @@ export default function Hero({}: Props) {
         <Link href="#about">
           <button>About</button>
         </Link>
-        <button>Services</button>
+        <Link href="#services">
+          <button>Services</button>
+        </Link>
+
         <button>Contacts</button>
       </nav>
       <Testimony
         image={mainImage}
-        style={" absolute left-[551px] top-[133px] "}
+        style={" absolute left-[551px] top-[133px]"}
       />
       <Testimony
         image={mainImage}

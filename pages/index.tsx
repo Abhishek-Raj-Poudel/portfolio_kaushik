@@ -3,6 +3,7 @@ import Head from "next/head";
 import About from "../components/About";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
+import Services from "../components/Services";
 
 const Home: NextPage = () => {
   return (
@@ -23,6 +24,10 @@ const Home: NextPage = () => {
       <section id="about" className="snap-center">
         {/* about */}
         <About />
+      </section>
+
+      <section id="services" className="snap-center">
+        <Services />
       </section>
 
       <footer className="py-8 text-center">

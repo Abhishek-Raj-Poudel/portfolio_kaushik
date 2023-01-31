@@ -17,6 +17,7 @@ module.exports = {
         photoBackground: "#C9D6DF",
         glassmorphism_light: "rgba(186,191,195,.1)",
         heading: "#1E2022",
+        text_color: "#46525A",
       },
       padding: {
         90: "360px",

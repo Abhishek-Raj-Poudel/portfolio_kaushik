@@ -14,9 +14,11 @@ export default function Header({}: Props) {
       <div className="flex items-center gap-4">
         <div className="flex items-center gap-2">
           <FiPhone className="w-6 h-6" />
-          <span className="text-xl">9841424169</span>
+          <span className="text-xl">+977 9841424149</span>
         </div>
-        <button>Hire Me!!</button>
+        <Link href="tel:9841424149">
+          <button>Tap to Call.</button>
+        </Link>
         <Link href="/" className="bg-primary text-white p-2 rounded-full">
           <FiSun className="w-6 h-6" />
         </Link>

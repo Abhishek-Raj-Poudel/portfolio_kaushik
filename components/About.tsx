@@ -7,10 +7,8 @@ type Props = {};
 
 export default function About({}: Props) {
   return (
-    <div className="relative h-screen flex flex-col justify-center  items-center gap-8 px-90 ">
-      <h2 className="text-5xl  font-bold tracking-[.2em] uppercase">
-        About me
-      </h2>
+    <div className="section ">
+      <h2 className="section_heading">About me</h2>
       <div className="flex items-center">
         <Image src={mainImage} alt="" className="z-10" />
         <div className="flex  flex-col gap-4">
