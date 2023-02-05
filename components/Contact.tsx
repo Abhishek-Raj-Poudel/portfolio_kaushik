@@ -20,7 +20,8 @@ export default function Contact({}: Props) {
             </div>
           </Link>
 
-          <Link href="mailto: kaushikshreekesh@gmail.com">
+          <Link href="mailto:abhishekrajpoudel@gmail.com?Subject=Hello">
+            {/* <Link href="https://mail.google.com/mail/u/0/#inbox?compose=new"> */}
             <div className="flex items-center gap-2">
               <FiMail className="w-6 h-6 text-primary" />
               <span className="text-xl">kaushikshreekesh@gmail.com</span>

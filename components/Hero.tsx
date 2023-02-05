@@ -5,7 +5,6 @@ import Testimony from "./Testimony";
 import mainImage from "../image/mainImage.png";
 import Scorpio from "../image/SVGs/Scorpio.svg";
 import Sagiterrious from "../image/SVGs/Sagiterrious.svg";
-import Link from "next/link";
 import Nav from "./Nav";
 
 type Props = {};
@@ -36,10 +35,10 @@ export default function Hero({}: Props) {
       />
 
       {/* <img src={Sagiterrious} alt="" /> */}
-      <div className="absolute text-heading opacity-20 top-[185px] right-[140px]">
+      <div className="absolute text-heading dark:text-dark-heading opacity-10 top-[185px] right-[140px]">
         <Scorpio />
       </div>
-      <div className="absolute text-heading opacity-20 top-[450px] left-[88px]">
+      <div className="absolute text-heading dark:text-dark-heading opacity-10 top-[450px] left-[88px]">
         <Sagiterrious />
       </div>
     </div>

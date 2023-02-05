@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -15,9 +16,16 @@ module.exports = {
         primary: "#ED982A",
         background: "#F0F5F9",
         photoBackground: "#C9D6DF",
-        glassmorphism_light: "rgba(186,191,195,.1)",
+        glassmorphism: "rgba(186,191,195,.1)",
         heading: "#1E2022",
         text_color: "#46525A",
+        dark: {
+          background: "#1E2022",
+          photoBackground: "#C9D6DF",
+          glassmorphism: "rgba(64,46,50,.1)",
+          heading: "#F0F5F9",
+          text_color: "#A6B1B8",
+        },
       },
       padding: {
         90: "360px",

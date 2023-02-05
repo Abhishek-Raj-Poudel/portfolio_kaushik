@@ -6,19 +6,19 @@
 @tailwind utilities;
 
 body {
-  @apply bg-background font-dm_sans;
+  @apply bg-background dark:bg-dark-background font-dm_sans text-text_color dark:text-dark-text_color;
 }
 
 h1 {
-  @apply text-[68px] font-poppins font-black;
+  @apply text-[68px] font-poppins font-black text-heading dark:text-dark-heading;
 }
 
 h3 {
-  @apply text-[40px] font-poppins font-bold;
+  @apply text-[40px] font-poppins font-bold text-heading dark:text-dark-heading;
 }
 
 h4 {
-  @apply font-poppins text-3xl font-bold;
+  @apply font-poppins text-3xl font-bold text-heading dark:text-dark-heading;
 }
 
 button {
@@ -30,7 +30,7 @@ button {
 }
 
 .glassmorphism {
-  @apply bg-glassmorphism_light backdrop-blur-[8px];
+  @apply bg-glassmorphism dark:bg-dark-glassmorphism backdrop-blur-[8px];
 }
 
 .section {

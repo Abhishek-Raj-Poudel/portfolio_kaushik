@@ -8,7 +8,7 @@ import Services from "../components/Services";
 
 const Home: NextPage = () => {
   return (
-    <div className=" scroll-smooth snap-y snap-mandatory  overflow-x-hidden ">
+    <div className=" scroll-smooth snap-y snap-mandatory  overflow-x-hidden  transition-all duration-700">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         <Services />
       </section>
 
-      <section id="contacts" className="snap-center">
+      <section id="contacts" className="snap-end">
         <Contact />
       </section>
 
