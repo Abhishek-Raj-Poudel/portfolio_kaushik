@@ -5,9 +5,9 @@ type Props = {};
 
 export default function Services({}: Props) {
   return (
-    <div className="section ">
-      <h2 className="section_heading mb-20 z-10">Choose a Service</h2>
-      <div className="flex gap-6 z-10">
+    <div className="section pt-20 md:pt-24 pb-10 ">
+      <h2 className="section_heading md:mb-20 z-10">Choose a Service</h2>
+      <div className="flex flex-col md:flex-row gap-6 z-10">
         <Card
           title={"Kundali Generation"}
           discription={"Build your child his own kundali."}

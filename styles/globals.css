@@ -10,11 +10,11 @@ body {
 }
 
 h1 {
-  @apply text-[68px] font-poppins font-black text-heading dark:text-dark-heading;
+  @apply text-4xl xl:text-[68px] font-poppins font-black text-heading dark:text-dark-heading;
 }
 
 h3 {
-  @apply text-[40px] font-poppins font-bold text-heading dark:text-dark-heading;
+  @apply text-center md:text-left text-[32px] xl:text-[40px] font-poppins font-bold text-heading dark:text-dark-heading;
 }
 
 h4 {
@@ -22,7 +22,7 @@ h4 {
 }
 
 button {
-  @apply bg-primary text-white px-12 py-3 text-xs font-medium rounded-full uppercase;
+  @apply flex gap-2 justify-center items-center bg-primary text-white px-9 md:px-12 py-2  md:py-3 text-sm font-medium rounded-full uppercase;
 }
 
 .button_rounded {
@@ -34,9 +34,9 @@ button {
 }
 
 .section {
-  @apply relative h-screen flex flex-col justify-center items-center gap-8 px-90;
+  @apply relative lg:h-screen flex flex-col justify-center items-center gap-8 px-4 lg:px-36 xl:px-90;
 }
 
 .section_heading {
-  @apply text-5xl  font-bold tracking-[.2em] uppercase;
+  @apply text-4xl text-center md:text-5xl  font-bold tracking-[.2em] uppercase;
 }

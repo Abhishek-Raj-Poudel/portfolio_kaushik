@@ -19,14 +19,14 @@ export default function ThemeButton({}: Props) {
           onClick={() => setTheme("light")}
           className="bg-primary text-white p-2 rounded-full transition-all duration-200"
         >
-          <FiSun className="w-6 h-6" />
+          <FiSun className=" w-5 h-5 md:w-6 md:h-6" />
         </div>
       ) : (
         <div
           onClick={() => setTheme("dark")}
           className="bg-primary text-white p-2 rounded-full transition-all duration-200"
         >
-          <FiMoon className="w-6 h-6" />
+          <FiMoon className="w-5 h-5 md:w-6 md:h-6" />
         </div>
       )}
     </div>

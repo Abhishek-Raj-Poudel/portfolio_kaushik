@@ -7,7 +7,7 @@ type Props = {};
 
 export default function Contact({}: Props) {
   return (
-    <div className="section gap-32">
+    <div className="section gap-32 pb-10 pt-20 md:pt-24">
       <h2 className="section_heading z-10">Contacts</h2>
       <div className="flex flex-col items-center justify-between  ">
         <div className="flex flex-col glassmorphism rounded-lg px-4 pt-7 pb-9 justify-center items-center gap-4">
@@ -37,11 +37,11 @@ export default function Contact({}: Props) {
       </div>
       <div className="flex items-center gap-4">
         <Nav />
-        <Link href="/" className="">
+        {/* <Link href="/" className="">
           <button className="button_rounded">
             <FiFacebook className="w-6 h-6" />
           </button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

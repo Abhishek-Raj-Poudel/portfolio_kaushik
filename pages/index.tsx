@@ -23,7 +23,6 @@ const Home: NextPage = () => {
       </section>
 
       <section id="about" className="snap-center">
-        {/* about */}
         <About />
       </section>
 
@@ -31,11 +30,11 @@ const Home: NextPage = () => {
         <Services />
       </section>
 
-      <section id="contacts" className="snap-end">
+      <section id="contacts" className="snap-start">
         <Contact />
       </section>
 
-      <footer className="py-8 text-center">
+      <footer className="py-8 text-text_color text-center text-[12px] md:text-sm">
         Copyright ©2023 All rights reserved | Designed by Abhishek Raj Poudel
       </footer>
     </div>
