@@ -43,10 +43,12 @@ export default function Hero({}: Props) {
       {/* Image */}
       <Image src={mainImage} alt="" className="z-10 w-[361px] h-[414px]" />
       {/* subheding */}
-      <p className="uppercase  text-lg  text-primary tracking-[4px] xl:tracking-[6px] mt-3 z-10">
+      <p className="uppercase  text-lg self-center text-center  text-primary tracking-[4px] xl:tracking-[6px] mt-3 z-10">
         Astrologer, Vastubid and More.
       </p>
-      <h1 className="mt-1 mb-5 z-10 xl:mt-4 ">Shreekesh Kaushik</h1>
+      <h1 className="mt-1 mb-5 z-10 xl:mt-4 self-center text-center   ">
+        Shreekesh Kaushik
+      </h1>
 
       <Nav />
       {/* Other elements absolute position elements */}

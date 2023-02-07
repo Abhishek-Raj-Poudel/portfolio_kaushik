@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-  @apply text-4xl xl:text-[68px] font-poppins font-black text-heading dark:text-dark-heading;
+  @apply text-3xl md:text-4xl xl:text-[68px] font-poppins font-black text-heading dark:text-dark-heading;
 }
 
 h3 {
