@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FiFacebook, FiPhone, FiSun } from "react-icons/fi";
 import ThemeButton from "./ThemeButton";
+import SocialLink from "./SocialLink";
 
 type Props = {};
 
@@ -9,15 +10,7 @@ export default function Header({}: Props) {
   return (
     <div className="fixed top-0 w-full flex items-center justify-between glassmorphism px-4 py-4 xl:px-90  z-20 ">
       {/* links */}
-      <Link
-        href="https://www.facebook.com/shreekesh.kaushik"
-        target="_blank"
-        className=""
-      >
-        <button className="button_rounded">
-          <FiFacebook className="w-5 h-5 md:w-6 md:h-6" />
-        </button>
-      </Link>
+      <SocialLink />
       <div className="flex items-center gap-4">
         <div className=" md:hidden">
           {/* <FiPhone className="w-6 h-6" /> */}

@@ -11,6 +11,7 @@
     "npm": "please-use-yarn"
   },
   "dependencies": {
+    "framer-motion": "^9.0.1",
     "next": "latest",
     "next-themes": "^0.2.1",
     "react": "18.2.0",

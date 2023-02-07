@@ -23,13 +23,13 @@ export default function Card({
       <div className="flex flex-col gap-2">
         <Image src={scroll} alt="logo" className="self-center mb-2" />
         <h4 className="self-center">{title}</h4>
-        <p className="max-w-xs text-text_color ">{discription}</p>
+        <p className="max-w-xs dark:text-slate-400 ">{discription}</p>
         {requirements && (
           <>
             <p className="max-w-xs font-bold">Requirement</p>
             <ul className="ml-4">
               {requirements?.map((requirement, index) => (
-                <li key={index} className="list-disc text-text_color">
+                <li key={index} className="list-disc dark:text-slate-400">
                   {requirement}
                 </li>
               ))}
@@ -39,16 +39,17 @@ export default function Card({
       </div>
       <div className="w-full flex flex-col gap-4 ">
         {price && (
-          <p className=" font-bold text-text_color text-3xl ">
+          <p className=" font-bold text-heading dark:text-dark-heading text-3xl ">
             Rs. {price}
+            {"   "}
             {perPerson && (
-              <span>
+              <span className="text-slate-600">
                 /<small>person</small>
               </span>
             )}
           </p>
         )}
-        <Link href="#contact" className="">
+        <Link href="#contacts" className="">
           <button className="w-full self-start">Call Now</button>
         </Link>
       </div>

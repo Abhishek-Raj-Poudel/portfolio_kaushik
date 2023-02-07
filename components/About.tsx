@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import mainImage from "../image/mainImage.png";
+import AboutImage from "../image/AboutImage.jpg";
 import Testimony from "./Testimony";
 
 type Props = {};
@@ -10,27 +11,33 @@ export default function About({}: Props) {
     <div className="section pt-20 md:pt-24 ">
       <h2 className="section_heading">About me</h2>
       <div className="flex flex-col md:flex-row gap-8  items-center">
-        <Image src={mainImage} alt="" className="z-10 w-[361px] h-[414px]" />
+        <Image
+          src={AboutImage}
+          alt=""
+          className="z-10 w-[361px] h-[414px] rounded-lg"
+        />
         <div className="flex  flex-col gap-4">
           <h3 className="">A little bit about me</h3>
           <p className=" text-center md:text-left md:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed
-            tempus ligula. Vestibulum diam justo, sodales quis elit in, finibus
-            mattis mauris. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Nullam sed tempus ligula. Vestibulum diam justo, sodales quis
-            elit in, finibus mattis mauris. Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Nullam sed tempus ligula. Vestibulum
-            diam justo, sodales quis elit in, finibus mattis mauris.
+            Hi there! I'm Shreekesh Kaushik, a seasoned astrologer with over 10
+            years of experience in the field. I have a passion for the stars and
+            a deep understanding of the celestial forces that shape our lives. I
+            am a skilled astro consultant, astrologer trainer, kundali maker and
+            Vastu Consulting.{" "}
+            <strong>
+              Let me help you unlock the secrets of the universe and discover
+              your true path in life.
+            </strong>
           </p>
         </div>
       </div>
-      <div className="z-10 flex gap-6 pt-10 pb-2 mt-4 mb-10 overflow-x-scroll w-[1500px]">
+      {/* <div className="z-10 flex gap-6 pt-10 pb-2 mt-4 mb-10 overflow-x-scroll w-[1500px]">
         <Testimony image={mainImage} style="" />
         <Testimony image={mainImage} style="" />
         <Testimony image={mainImage} style="" />
         <Testimony image={mainImage} style="" />
         <Testimony image={mainImage} style="" />
-      </div>
+      </div> */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 239 726"

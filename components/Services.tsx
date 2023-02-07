@@ -1,16 +1,44 @@
 import React from "react";
 import Card from "./Card";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 export default function Services({}: Props) {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const cardAnimation = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <div className="section pt-20 md:pt-24 pb-10 ">
       <h2 className="section_heading md:mb-20 z-10">Choose a Service</h2>
-      <div className="flex flex-col md:flex-row gap-6 z-10">
+      <motion.div
+        initial={{ y: 20 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col md:flex-row gap-6 z-10"
+      >
         <Card
           title={"Kundali Generation"}
-          discription={"Build your child his own kundali."}
+          discription={
+            "Build your child his own kundali. Please call for further Information"
+          }
           requirements={[
             "Child's Date of birth",
             "Child's Time of Birth",
@@ -21,7 +49,9 @@ export default function Services({}: Props) {
         />
         <Card
           title={"Kundali Vislesion"}
-          discription={"Know your future and ask me anything."}
+          discription={
+            "Know your future and ask me anything. Please call for further Information and time reservation."
+          }
           requirements={["Bring your Date, Location and time of birth."]}
           price={999}
           perPerson
@@ -29,11 +59,12 @@ export default function Services({}: Props) {
         <Card
           title={"Vastu Counceling"}
           discription={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            "Here I will give come to your home for inspection and will provide with remedy. Please call for further Information."
           }
         />
+
         {/* svg */}
-      </div>
+      </motion.div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="623"
